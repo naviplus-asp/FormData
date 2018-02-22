@@ -133,7 +133,7 @@ if (!window.FormData || !window.FormData.prototype.keys) {
         else if (elm.type === 'checkbox' || elm.type === 'radio') {
           if (elm.checked) this.append(elm.name, elm.value)
         } else
-          this.append(elm.name, elm.value)
+          this.append(elm.name, elm.value.replace(/\r\n|\r|\n/g, '\r\n'))
       }
     }
 

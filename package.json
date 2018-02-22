@@ -5,7 +5,6 @@
   "main": "formdata.min.js",
   "scripts": {
     "build": "node build",
-    "prepare": "npm run build",
     "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
   },
   "repository": {
